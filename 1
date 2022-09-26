@@ -1,0 +1,19 @@
+sp = [[], []]
+s = (input('Введіть рядок:'))
+
+for i in s:
+    if i.isdigit():
+        sp[0].append(i)
+for g in sp[0]:
+    n = s.find(g)
+    sp[1].append(n)
+print(sp[1])
+
+def lit(s):
+    spnew = " "
+    for c in s:
+        if not (c.isdigit()):
+            spnew = spnew + c
+    return spnew
+s = lit(s)
+print(s)
