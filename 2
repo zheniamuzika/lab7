@@ -1,0 +1,10 @@
+import random
+def shifr(s,c):
+    snew = ""
+    for i in range(len(s)):
+        snew = snew + s[i] + c
+        return snew
+s = input("Введіть рядок:")
+c = random.choice("A"'B''C''D''E''F''G''H''I''J''K''L''M''N''O''P''Q''R''S''T''U''V''W''X''Y''Z')
+
+print(shifr(s,c))
